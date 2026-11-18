@@ -4,6 +4,12 @@
 
 O CampusFood reúne, em uma interface simples, estabelecimentos, cardápios e produtos organizados por categoria e faixa de preço. A proposta é ajudar o estudante a encontrar opções de alimentação e consultar informações antes de escolher onde comer.
 
+## Acesse o projeto
+
+🌐 [Visualizar CampusFood](https://patriciosva.github.io/CampusFood/)
+
+💻 [Código-fonte](https://github.com/PatricioSva/CampusFood)
+
 ## Funcionalidades
 
 - Página inicial com estabelecimentos em destaque.
