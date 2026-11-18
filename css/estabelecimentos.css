@@ -1,0 +1,292 @@
+
+/* =========================================
+   CAMPUS FOOD - ESTABELECIMENTOS
+========================================= */
+
+.pagina-estabelecimentos {
+    background-color: var(--creme);
+    color: var(--marrom);
+}
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+.pagina-estabelecimentos a:focus-visible {
+    outline: 3px solid var(--vermelho);
+    outline-offset: 4px;
+}
+
+.pular-conteudo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10;
+
+    padding: 12px 16px;
+    border-radius: 8px;
+
+    background-color: var(--marrom);
+    color: white;
+
+    transform: translateY(-160%);
+}
+
+.pular-conteudo:focus {
+    transform: translateY(0);
+}
+
+/* =========================================
+   NAVEGAÇÃO
+========================================= */
+
+.pagina-estabelecimentos .nav a,
+.pagina-estabelecimentos .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+
+.pagina-estabelecimentos .nav a:hover,
+.pagina-estabelecimentos .nav .ativo {
+    color: var(--vermelho);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.pagina-estabelecimentos .footer-links a:hover {
+    color: var(--amarelo);
+}
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.estabelecimentos-conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 24px 0;
+}
+
+.estabelecimentos-introducao {
+    margin-bottom: 40px;
+}
+
+.estabelecimentos-introducao .tag {
+    color: var(--marrom);
+    background-color: var(--amarelo);
+    border: 1px solid var(--laranja);
+}
+
+.estabelecimentos-introducao h1 {
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--marrom);
+}
+
+.estabelecimentos-introducao h1::after {
+    content: "";
+    display: block;
+
+    width: 64px;
+    height: 5px;
+    margin-top: 16px;
+
+    border-radius: 4px;
+    background-color: var(--laranja);
+}
+
+.aviso-prototipo {
+    margin-top: 24px;
+    padding: 16px;
+
+    border-left: 4px solid var(--laranja);
+    border-radius: 0 8px 8px 0;
+
+    background-color: white;
+    font-size: 14px;
+}
+
+/* =========================================
+   CABEÇALHO DA LISTA
+========================================= */
+
+.estabelecimentos-cabecalho {
+    margin-bottom: 24px;
+}
+
+.estabelecimentos-cabecalho .mini-titulo {
+    color: var(--vermelho);
+}
+
+.estabelecimentos-cabecalho p {
+    margin-top: 8px;
+}
+
+/* =========================================
+   CARDS DOS ESTABELECIMENTOS
+========================================= */
+
+.estabelecimentos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.estabelecimento {
+    padding: 32px;
+
+    background-color: white;
+    border: 1px solid #E9D5BD;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 18px rgba(56, 37, 31, 0.05);
+    transition: 0.2s;
+}
+
+.estabelecimento:hover {
+    border-color: var(--laranja);
+    box-shadow: 0 8px 22px rgba(56, 37, 31, 0.10);
+}
+
+.estabelecimento h3 {
+    color: var(--marrom);
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.estabelecimento-descricao {
+    margin-top: 12px;
+}
+
+/* =========================================
+   AVALIAÇÕES
+========================================= */
+
+.estabelecimento-avaliacao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.estrelas {
+    padding: 2px 8px;
+    border-radius: 6px;
+
+    color: var(--amarelo);
+    background-color: var(--marrom);
+
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   LOCALIZAÇÃO, HORÁRIO E STATUS
+========================================= */
+
+.estabelecimento-dados {
+    margin: 20px 0 24px;
+}
+
+.estabelecimento-dados > div + div {
+    margin-top: 16px;
+}
+
+.estabelecimento-dados dt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.estabelecimento-dados dd {
+    margin: 4px 0 0;
+}
+
+.estabelecimento-status {
+    display: inline-block;
+
+    padding: 6px 12px;
+    border-radius: 8px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Verde para indicar aberto */
+
+.status-aberto {
+    color: #27663D;
+    background-color: #E6F2E8;
+    border-left: 3px solid #27663D;
+}
+
+/* Vermelho para indicar fechado */
+
+.status-fechado {
+    color: #9B2921;
+    background-color: #FCE9E6;
+    border-left: 3px solid var(--vermelho);
+}
+
+/* =========================================
+   BOTÃO VER CARDÁPIO
+========================================= */
+
+.pagina-estabelecimentos .botao-card {
+    display: block;
+    min-height: 48px;
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    background-color: var(--vermelho);
+    color: white;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 8px rgba(201, 54, 43, 0.15);
+
+    transition: 0.2s;
+}
+
+.pagina-estabelecimentos .botao-card:hover {
+    background-color: var(--laranja);
+    color: var(--marrom);
+
+    box-shadow: 0 4px 12px rgba(56, 37, 31, 0.15);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .estabelecimentos-conteudo {
+        padding: 32px 5% 0;
+    }
+
+    .estabelecimento {
+        padding: 24px 20px;
+    }
+
+    .estabelecimento h3 {
+        font-size: 22px;
+    }
+
+    .pagina-estabelecimentos .nav {
+        flex-wrap: wrap;
+        gap: 8px 18px;
+    }
+
+    .pagina-estabelecimentos .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,696 @@
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+:root {
+    --vermelho: #ff0a0a;
+    --amarelo: #F4B942;
+    --creme: #FFF1D6;
+    --marrom: #38251F;
+    --laranja: #E87945;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--creme);
+    color: var(--marrom);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #E9D5BD;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--marrom);
+}
+
+.logo strong {
+    color: var(--vermelho);
+}
+
+.logo-icon {
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.nav a {
+    font-size: 15px;
+    color: var(--marrom);
+    transition: 0.2s;
+}
+
+.nav a:hover,
+.nav .ativo {
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 70px 6% 80px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(244, 185, 66, 0.25),
+            transparent 30%
+        ),
+        var(--creme);
+}
+
+.hero-texto {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background-color: var(--amarelo);
+    color: var(--marrom);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.05;
+    color: var(--marrom);
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--vermelho);
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    color: #654B40;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUSCA
+========================= */
+
+.busca {
+    max-width: 650px;
+    margin: auto;
+    padding: 7px;
+    background-color: white;
+    border: 1px solid #E9D5BD;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 25px rgba(56, 37, 31, 0.07);
+}
+
+.busca span {
+    padding-left: 12px;
+}
+
+.busca input {
+    flex: 1;
+    border: none;
+    padding: 13px 5px;
+    font-size: 15px;
+    background: transparent;
+    color: var(--marrom);
+}
+
+.busca input:focus {
+    outline: 2px solid var(--amarelo);
+}
+
+.busca button {
+    border: none;
+    background-color: var(--vermelho);
+    color: white;
+    font-weight: bold;
+    padding: 13px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.busca button:hover {
+    background-color: var(--laranja);
+    color: var(--marrom);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.categorias,
+.destaques {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 6%;
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 28px;
+}
+
+.mini-titulo {
+    color: var(--vermelho);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-top: 6px;
+    font-size: 30px;
+    color: var(--marrom);
+}
+
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias-lista {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.categoria {
+    padding: 20px 10px;
+    background-color: white;
+    border: 1px solid #E9D5BD;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.categoria:hover {
+    transform: translateY(-3px);
+    border-color: var(--vermelho);
+    color: var(--vermelho);
+    box-shadow: 0 8px 20px rgba(201, 54, 43, 0.1);
+}
+
+.categoria-icon {
+    font-size: 28px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.destaques {
+    padding-top: 20px;
+}
+
+.ver-todos {
+    color: var(--vermelho);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ver-todos:hover {
+    text-decoration: underline;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-estabelecimento {
+    background-color: white;
+    border: 1px solid #E9D5BD;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.card-estabelecimento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(56, 37, 31, 0.12);
+}
+
+.imagem-card {
+    height: 150px;
+    background-color: #FCE2AE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.card-conteudo {
+    padding: 20px;
+}
+
+.card-topo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.categoria-card {
+    font-size: 12px;
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+/* Seletor corrigido */
+
+.card-estabelecimento h3 {
+    margin-top: 3px;
+    font-size: 19px;
+    color: var(--marrom);
+}
+
+.status {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.aberto {
+    color: #27663D;
+}
+
+.fechado {
+    color: var(--vermelho);
+}
+
+.localizacao {
+    margin-top: 12px;
+    color: #654B40;
+    font-size: 14px;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.card-info span {
+    padding: 5px 9px;
+    border-radius: 6px;
+    background-color: var(--creme);
+    font-size: 12px;
+    color: var(--marrom);
+}
+
+.botao-card {
+    display: block;
+    text-align: center;
+    padding: 11px;
+    border-radius: 9px;
+    background-color: var(--vermelho);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.botao-card:hover {
+    background-color: var(--laranja);
+    color: var(--marrom);
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.como-funciona {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 6%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    background-color: var(--marrom);
+    border-radius: 25px;
+    color: white;
+}
+
+.como-funciona h2 {
+    color: white;
+}
+
+.como-texto p {
+    margin-top: 15px;
+    color: var(--creme);
+    max-width: 450px;
+}
+
+.passo {
+    display: flex;
+    gap: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.passo > span {
+    color: var(--amarelo);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.passo h3 {
+    font-size: 16px;
+}
+
+.passo p {
+    color: #E5D4C1;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-pagina {
+    min-height: 65vh;
+    padding: 60px 20px;
+}
+
+.login-caixa {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 35px;
+
+    background-color: white;
+    border: 1px solid #E9D5BD;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(56, 37, 31, 0.08);
+}
+
+.login-caixa h1 {
+    color: var(--marrom);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.login-caixa > p {
+    color: #654B40;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.login-caixa form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-caixa label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-caixa input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+
+    border: 1px solid #D5C1AE;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-caixa button {
+    margin-top: 10px;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--vermelho);
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-caixa button:hover {
+    background-color: var(--laranja);
+    color: var(--marrom);
+}
+
+#aviso-login {
+    margin-top: 25px;
+    padding: 15px;
+
+    background-color: var(--creme);
+    border-left: 4px solid var(--amarelo);
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+#aviso-login:target {
+    border-left-color: var(--vermelho);
+    outline: 2px solid var(--amarelo);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 70px;
+    padding: 30px 6%;
+
+    background-color: var(--marrom);
+    border-top: 1px solid #654B40;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    color: var(--creme);
+    font-size: 13px;
+}
+
+.footer-logo {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer-logo strong {
+    color: var(--amarelo);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a:hover {
+    color: var(--amarelo);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .categorias-lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .como-funciona {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .busca {
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    .busca input {
+        min-width: 0;
+        width: 60%;
+    }
+
+    .busca button {
+        width: 100%;
+    }
+
+    .categorias,
+    .destaques {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .section-top {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .categorias-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .como-funciona {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 35px 25px;
+    }
+
+    .login-pagina {
+        padding: 40px 5%;
+    }
+
+    .login-caixa {
+        padding: 25px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

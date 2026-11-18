@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estabelecimentos | Campus Food</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estabelecimentos.css">
+</head>
+
+<body class="pagina-estabelecimentos">
+
+    <!-- ACESSIBILIDADE -->
+    <a class="pular-conteudo" href="#conteudo">
+        Pular para o conteúdo
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <a class="logo" href="../index.html"
+           aria-label="Campus Food - Início">
+
+            <span class="logo-icon" aria-hidden="true">🥗</span>
+            <span>Campus <strong>Food</strong></span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+
+            <a href="../index.html">Início</a>
+
+            <a href="estabelecimentos.html"
+               class="ativo"
+               aria-current="page">
+                Estabelecimentos
+            </a>
+
+            <a href="../paginas/login.html">Login</a>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo" class="estabelecimentos-conteudo">
+
+        <div class="estabelecimentos-introducao">
+
+            <span class="tag">Alimentação na UNIESP</span>
+
+            <h1>Onde comer no campus?</h1>
+
+            <p>
+                Conheça os estabelecimentos e encontre
+                sua próxima parada para comer.
+            </p>
+
+            <p class="aviso-prototipo">
+                <strong>Protótipo acadêmico:</strong>
+                nomes, descrições, avaliações, localizações,
+                horários, preços e disponibilidade são
+                informações ilustrativas.
+            </p>
+
+        </div>
+
+        <!-- LISTA DOS ESTABELECIMENTOS -->
+        <section aria-labelledby="titulo-destaques">
+
+            <div class="estabelecimentos-cabecalho">
+
+                <span class="mini-titulo">
+                    OS DESTAQUES DA HOME
+                </span>
+
+                <h2 id="titulo-destaques">
+                    Estabelecimentos em destaque
+                </h2>
+
+                <p>
+                    Selecione um estabelecimento
+                    para visualizar seu cardápio.
+                </p>
+
+            </div>
+
+            <div class="estabelecimentos-lista">
+
+                <!-- CANTINA CENTRAL -->
+                <a class="link-estabelecimento"
+                   href="../Cardápio/cardapio.html"
+                   aria-label="Ver cardápio da Cantina Central">
+
+                    <article class="estabelecimento"
+                             aria-labelledby="nome-cantina">
+
+                        <h3 id="nome-cantina">
+                            Cantina Central
+                        </h3>
+
+                        <p class="estabelecimento-descricao">
+                            Salgados, sanduíches e bebidas
+                            para uma pausa rápida entre as aulas.
+                        </p>
+
+                        <p class="estabelecimento-avaliacao">
+                            <span class="estrelas" aria-hidden="true">
+                                ★★★★☆
+                            </span>
+                            <span>Avaliação ilustrativa: 4 de 5</span>
+                        </p>
+
+                        <dl class="estabelecimento-dados">
+
+                            <div>
+                                <dt>Localização</dt>
+                                <dd>Bloco Central</dd>
+                            </div>
+
+                            <div>
+                                <dt>Horário de funcionamento</dt>
+                                <dd>
+                                    Segunda a sexta,
+                                    das <time datetime="07:00">7h</time>
+                                    às <time datetime="21:00">21h</time>
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Status ilustrativo</dt>
+                                <dd>
+                                    <span class="estabelecimento-status status-aberto">
+                                        Aberto
+                                    </span>
+                                </dd>
+                            </div>
+
+                        </dl>
+
+                        <span class="botao-card">
+                            Ver Cardápio
+                        </span>
+
+                    </article>
+
+                </a>
+
+                <!-- CAFÉ UNIVERSITÁRIO -->
+                <a class="link-estabelecimento"
+                   href="../Cardápio/cafe-universitario.html"
+                   aria-label="Ver cardápio do Café Universitário">
+
+                    <article class="estabelecimento"
+                             aria-labelledby="nome-cafe">
+
+                        <h3 id="nome-cafe">
+                            Café Universitário
+                        </h3>
+
+                        <p class="estabelecimento-descricao">
+                            Cafés, bolos e lanches leves
+                            para acompanhar os estudos
+                            e as conversas.
+                        </p>
+
+                        <p class="estabelecimento-avaliacao">
+                            <span class="estrelas" aria-hidden="true">
+                                ★★★★★
+                            </span>
+                            <span>Avaliação ilustrativa: 5 de 5</span>
+                        </p>
+
+                        <dl class="estabelecimento-dados">
+
+                            <div>
+                                <dt>Localização</dt>
+                                <dd>Bloco A</dd>
+                            </div>
+
+                            <div>
+                                <dt>Horário de funcionamento</dt>
+                                <dd>
+                                    Segunda a sexta,
+                                    das <time datetime="08:00">8h</time>
+                                    às <time datetime="21:00">21h</time>
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Status ilustrativo</dt>
+                                <dd>
+                                    <span class="estabelecimento-status status-aberto">
+                                        Aberto
+                                    </span>
+                                </dd>
+                            </div>
+
+                        </dl>
+
+                        <span class="botao-card">
+                            Ver Cardápio
+                        </span>
+
+                    </article>
+
+                </a>
+
+                <!-- RESTAURANTE CAMPUS -->
+                <a class="link-estabelecimento"
+                   href="../Cardápio/restaurante-campus.html"
+                   aria-label="Ver cardápio do Restaurante Campus">
+
+                    <article class="estabelecimento"
+                             aria-labelledby="nome-restaurante">
+
+                        <h3 id="nome-restaurante">
+                            Restaurante Campus
+                        </h3>
+
+                        <p class="estabelecimento-descricao">
+                            Refeições completas e opções
+                            de almoço para quem passa
+                            o dia no campus.
+                        </p>
+
+                        <p class="estabelecimento-avaliacao">
+                            <span class="estrelas" aria-hidden="true">
+                                ★★★★☆
+                            </span>
+                            <span>Avaliação ilustrativa: 4 de 5</span>
+                        </p>
+
+                        <dl class="estabelecimento-dados">
+
+                            <div>
+                                <dt>Localização</dt>
+                                <dd>Centro Acadêmico</dd>
+                            </div>
+
+                            <div>
+                                <dt>Horário de funcionamento</dt>
+                                <dd>
+                                    Segunda a sexta,
+                                    das <time datetime="11:00">11h</time>
+                                    às <time datetime="14:00">14h</time>
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Status ilustrativo</dt>
+                                <dd>
+                                    <span class="estabelecimento-status status-fechado">
+                                        Fechado
+                                    </span>
+                                </dd>
+                            </div>
+
+                        </dl>
+
+                        <span class="botao-card">
+                            Ver Cardápio
+                        </span>
+
+                    </article>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <a class="footer-logo" href="../index.html">
+            🥗 Campus <strong>Food</strong>
+        </a>
+
+        <p>Projeto acadêmico - Campus Food | UNIESP</p>
+
+        <nav class="footer-links" aria-label="Navegação do rodapé">
+
+            <a href="../index.html">
+                Início
+            </a>
+
+            <a href="estabelecimentos.html"
+               aria-current="page">
+                Estabelecimentos
+            </a>
+
+            <a href="../paginas/login.html">
+                Login
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+</html>
